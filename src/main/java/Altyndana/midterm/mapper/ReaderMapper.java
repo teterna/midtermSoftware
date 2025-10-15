@@ -9,7 +9,7 @@ import org.mapstruct.Mapping;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ReaderMapper {
     @Mapping(target = "nameDto", source = "name")
     ReaderDto toDto(Reader reader);

@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 import java.util.List;
 import java.util.Optional;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface AuthorMapper {
     @Mapping(target = "fNameDto", source = "fName")
     @Mapping(target = "lNameDto", source = "lName")
